@@ -39,27 +39,27 @@
   </div>
 
 
- <div class="form-container">
-  <form id="contact-form">
-    <h2>Sent to my email</h2>
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+<form id="contact-form" enctype="multipart/form-data">
+  <h2>Sent to my email</h2>
 
-    <label for="subject">Subject</label>
-    <input type="text" id="subject" name="subject" required>
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" value="aljayramosll@gmail.com" readonly>
+  <label for="subject">Subject</label>
+  <input type="text" id="subject" name="subject" required>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" value="aljayramosll@gmail.com" readonly>
 
-    <label for="attachment">Attach a file</label>
-<input type="file" id="attachment" name="attachment">
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="4" required></textarea>
 
+  <label for="attachment">Attach an image</label>
+  <input type="file" id="attachment" name="attachment" accept="image/*" required>
 
-    <button type="submit">Submit</button>
-  </form>
+  <button type="submit">Submit</button>
+</form>
+
 </div>
 
 </body>
