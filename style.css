@@ -1,0 +1,200 @@
+:root {
+  --bg-color: #1c1c1c;
+  --text-color: #fff;
+  --accent-color: #e63946;
+  --sidebar-color: #121212;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+  width: 200px;
+  background: var(--sidebar-color);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 20px 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav li.active a {
+  color: var(--accent-color);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  position: relative;
+}
+div{
+  display: flex;
+}
+
+.profile {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px; 
+}
+
+
+
+
+/* icon */
+.fa-facebook, .fa-brands.fa-facebook {
+  color: #1877f3; 
+}
+.fa-envelope-circle-check, .fa-solid.fa-envelope-circle-check {
+  color: #ff4500; 
+}
+.fa-html5, .fa-brands.fa-html5 {
+  color: #ff6600;
+}
+.fa-brands, .fa-css, .fa-js, .fa-react {
+  color: #61dafb; 
+}
+.fa-js, .fa-brands.fa-js {
+  color: #f7df1e; 
+}
+.fa-solid, .fa-window-maximize {
+  color: #800080; 
+}
+.fa-robot, .fa-solid.fa-robot {
+  color: #87ceeb;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 140%;
+}
+h5{
+    color: var(--text-color);
+    margin: 0px;
+
+}
+.content .dynamic-text {
+  font-size: 20px;
+  color: var(--accent-color);
+  font-weight: 400;
+}
+
+.content h1 .dynamic-text {
+  font-size: 120%;
+}
+
+
+.dynamic-text span{
+    position: relative;
+}
+
+.content .dynamic-text span::after {
+    
+    content: "";
+    position: absolute;
+    left: 0;        
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    display: inline-block;
+    animation: typing 2s steps(10) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.btn {
+  background: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 4px;
+  text-decoration: none; 
+
+}
+
+
+/*contact*/
+
+.contact {
+  display: block;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-left: 10%;
+  max-width: 400px;
+}
+
+/*form email*/
+.form-container {
+  background-color: var(--bg-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+  margin-left: 10%;
+  margin-top: 20px; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/*skills*/
+.skills {
+  display: block;
+  flex-direction: column;
+  margin-top: 12%;
+  margin-left:25%;
+  max-width: 400px;
+
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aljay Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init({
+        publicKey: "UkyXiH6Rlq60Ye8SB",
+      });
+    })();
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="sidebar">
+    <nav>
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="contact">
+    <h1>Get in touch</h1>
+    <fieldset>
+      <legend>Contact</legend>
+      <label>Name: Aljay Ramos</label><br>
+      <label>Email: aljayramosll@gmail.com</label><br>
+      <label>Phone: 09944649108</label><br>
+      <label>Address: 1134 wawa street Malaban,Biñan Laguna</label><br>
+      <label>Facebook: <a href="https://www.facebook.com/aljay.ramos.weeb" target="_blank">Aljay Ramos</a></label><br>    
+    </fieldset>
+  </div>
+
+
+ <div class="form-container">
+  <form id="contact-form">
+    <h2>Sent to my email</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" value="aljayramosll@gmail.com" readonly>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <label for="attachment">Attach a file</label>
+<input type="file" id="attachment" name="attachment">
+
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
